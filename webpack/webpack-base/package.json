@@ -1,0 +1,15 @@
+{
+  "name": "webpack-base",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "zeronlee <641007257@qq.com> (http://www.zeronlee.com/)",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {}
+}

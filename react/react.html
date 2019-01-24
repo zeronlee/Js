@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+    <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+<body>
+
+<div id="root"></div>
+<script type="text/babel">
+
+    function renderContent (content) {
+        class Notification extends React.Component {
+            render () {
+                const N = React.getNotificationsCount()
+                return(
+                    <div>
+                        {N>0?<span>有({N})条未读消息</span>:<span>没有未读消息</span>}
+                    </div>
+                )
+            }
+        }
+        ReactDOM.render(
+            <Notification/>,document.getElementById('root'));
+
+    }
+
+    renderContent ("Hello World")
+</script>
+<!--require('react')操作-->
+</body>
+</html>
